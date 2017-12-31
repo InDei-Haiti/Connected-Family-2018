@@ -1,0 +1,13 @@
+/app/Http/Controllers/_bin
+/config/mail.php
+/public/sftp-config.json
+/public/css/_bin
+/public/js/_bin
+/resources/views/_backup
+/resources/views/_bin
+/resources/views/dashboard/_bin
+/routes/web-test.php
+/storage/*
+/vendor
+.env
+sftp-config.json

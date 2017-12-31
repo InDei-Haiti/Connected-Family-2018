@@ -1,0 +1,224 @@
+
+/* Global */
+  *, button, input, select {
+    font-family: 'Dosis', serif;
+    word-wrap: normal;
+  }
+  html,
+  body{
+    position: relative;
+    background-color: #f0f0f0;
+  }
+  .margin-15{
+    margin-top: 15px;
+  }
+  .padding-15{
+    padding-top: 15px;
+  }
+  .fixed{
+    position: fixed;
+  }
+
+
+
+/* Fonts */
+  .font-cookie{
+    font-family: 'Cookie' !important;
+  }
+  .font-dosis{
+    font-family: 'Dosis' !important;
+  }
+  .font-default{
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  .noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+  }
+  .font-bold{
+    font-weight: bold;
+  }
+  .font-underline{
+    text-decoration: underline;
+  }
+  .font-upper-case{
+    text-transform: uppercase;
+  }
+  .font-cyan{
+    color: #5383d3;
+  }
+  .font-pink{
+    color: #e51178;
+  }
+  .font-fb{
+    color: #3b5998;
+  }
+  .font-linkedin{
+    color: #007bb6;
+  }
+  .font-white{
+    color: #fff !important;
+  }
+  .font-black{
+    color: #000;
+  }
+  .font-28{
+    font-size: 28px;
+  }
+  .font-22{
+    font-size: 22px;
+  }
+  .help-block{
+    color: red;
+    font-weight: bold;
+  }
+
+
+/* bg */
+  .bg-cyan{
+    background-color: #5383d3;
+  }
+  .bg-pink{
+    background-color: #e51178;
+  }
+  .bg-fb{
+    background-color: #3b5998;
+  }
+  .bg-linkedin{
+    background-color: #007bb6;
+  }
+  .bg-profile{
+    background-color: #f7f7f7;
+  }
+  .bg-white{
+    background-color: white;
+  }
+  .bg-black{
+    background-color: black;
+  }
+
+
+
+/* Slider */
+  .carousel-indicators li {
+    background-color: rgba(0,0,0,0.5);
+  }
+  .carousel-indicators .active {
+    background-color: black;
+  }
+
+
+/* cursor-pointer */
+  .cursor-pointer:hover{
+    cursor: pointer;
+  }
+  .cursor-default:hover{
+    cursor: default;
+  }
+  .cursor-not-allowed:hover{
+    cursor: not-allowed;
+  }
+  .cursor-pointer[disabled]{
+    cursor: not-allowed;
+  }
+
+
+/* Scrollbar */
+  *::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #e51178;
+  }
+  *::-webkit-scrollbar{
+    width: 6px;
+    background-color: #e51178;
+  }
+  *::-webkit-scrollbar-thumb{
+    background-color: #5383d3;
+  }
+
+
+/* Navbar */
+  .navbar-toggler{
+    margin-top: 7px;
+  }
+  .navbar{
+    overflow-y: unset;
+    max-height: 100%;
+    box-shadow:  0px 2px 2px 0px rgba(0 , 0 , 0 , 0.48),
+                 0px 0px 0px 1px rgba(0 , 0 , 0 , 0.08);
+  }
+
+/* Footer */
+  .footer{
+    padding: 12px;
+  }
+  #connected-footer{
+    box-shadow:  0px -2px 2px 0px rgba(0 , 0 , 0 , 0.48),
+                 0px 0px 0px 1px rgba(0 , 0 , 0 , 0.08);
+  }
+
+
+/* Cards */
+  .clear-card{
+    padding: 15px;
+  }
+  .card {
+    border: 1px solid #5383d3;
+  }
+  .card:hover{
+    border: 1px solid #e51178;
+    box-shadow:  0px 0px 4px 0px rgba(0 , 0 , 0 , 0.48),
+                 0px 0px 0px 1px rgba(0 , 0 , 0 , 0.08);
+  }
+
+
+
+/* Alerts */
+  .alert-holder{
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    z-index: 2001;
+  }
+  .shade{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 2000;
+  }
+  .shade-danger{
+    background-color: rgba(128,0,0,0.2) !important;
+  }
+  .shade-success{
+    background-color: rgba(0,128,0,0.2) !important;
+  }
+
+
+/* Media Queries */
+  /* Fix Container behavior when less than 576px width */
+  @media screen and (max-width: 576px) {
+    .container {
+      margin: 0px !important;
+    }
+    button.navbar-toggler{
+      margin-right: -20px;
+    }
+  }
+
+  /**/
+  @media screen and (max-width: 767px){
+    .navbar {
+      overflow-y: auto !important;
+      max-height: 100%;
+    }
+  }
